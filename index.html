@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music App</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+  
+</head>
+<body>
+    <main>
+      <nav class="main-menu">
+        <div>
+          <div class="user-info">
+            <img
+              src="harsh.jpg"
+              alt="user" />
+            <p>Harsh Shallya</p>
+          </div>
+          <ul>
+            <li class="nav-item active">
+              <a href="#">
+                <i class="fa fa-map nav-icon"></i>
+                <span class="nav-text">Discover</span>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a href="#">
+                <i class="fa fa-arrow-trend-up nav-icon"></i>
+                <span class="nav-text">Trending</span>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a href="#">
+                <i class="fa fa-compact-disc nav-icon"></i>
+                <span class="nav-text">Album</span>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a href="#">
+                <i class="fa fa-circle-play nav-icon"></i>
+                <span class="nav-text">Playlist</span>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a href="#">
+                <i class="fa fa-heart nav-icon"></i>
+                <span class="nav-text">Favorites</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <ul>
+          <li class="nav-item">
+            <a href="#">
+              <i class="fa fa-user nav-icon"></i>
+              <span class="nav-text">Profile</span>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="#">
+              <i class="fa fa-gear nav-icon"></i>
+              <span class="nav-text">Settings</span>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="#">
+              <i class="fa fa-right-from-bracket nav-icon"></i>
+              <span class="nav-text">Logout</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+<section class="content">
+        <div class="left-content">
+          <div class="slider-container">
+            <h1>Popular Playlist</h1>
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"data-songs='[{"title": "Hum Mar Jayenge", "artist": "Arijit Singh", "duration": "5:06", "img": "hum mar jaynga.jpeg", "url": "https://github.com/harshshallya/songs/raw/main/Hum%20Mar%20Jayenge.mp3"},
+  {"title": "Gangstaa ParaDise", "artist": "Colio", "duration": "4:00", "img": "https://upload.wikimedia.org/wikipedia/en/thumb/e/e9/Coolio_-_Gangsta%27s_Paradise.jpg/220px-Coolio_-_Gangsta%27s_Paradise.jpg", "url": "https://github.com/harshshallya/songs/raw/main/Gangstas-Paradise(Pagal-World.Com.In).mp3"},
+  {"title": "Way Down We Go", "artist": "Kaleo", "duration": "3:34", "img": "https://upload.wikimedia.org/wikipedia/en/a/a1/KaleoWayDownWeGo.jpg", "url": "https://github.com/harshshallya/songs/raw/main/Way-Down-We-Go(PagalNew.Com.Se).mp3"}
+  ]'>
+                  <img
+                    src="https://github.com/ecemgo/mini-samples-great-tricks/assets/13468728/95b52c32-f5da-4fe6-956d-a5ed118bbdd2" />
+                  <div class="slide-overlay">
+                    <h2>Midnight Moods</h2>
+                    <button>
+                      Listen Now <i class="fa-solid fa-circle-play"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="swiper-slide" data-songs='[{"title": "Hum Mar Jayenge", "artist": "Arijit Singh", "duration": "5:06", "img": "hum mar jaynga.jpeg", "url": "https://github.com/harshshallya/songs/raw/main/Hum%20Mar%20Jayenge.mp3"},
+                {"title": "What Makes You Beautiful", "artist": "One Direction", "duration": "3:19", "img": "whatmakes.jpg", "url": "https://github.com/harshshallya/songs/raw/main/What-Makes-You-Beautiful.mp3"},
+  {"title": "All Black", "artist": "Raftaar", "duration": "3:38", "img": "all black.jpg", "url": "https://github.com/harshshallya/songs/raw/main/All%20Black%20Raftaar%20128%20Kbps.mp3"}
+              ]'>
+                  <img
+                    src="https://github.com/ecemgo/mini-samples-great-tricks/assets/13468728/6ddf81f5-2689-4f34-bf80-a1e07f14621c" />
+                  <div class="slide-overlay">
+                    <h2>Party Starters</h2>
+                    <button>
+                      Listen Now <i class="fa-solid fa-circle-play"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="swiper-slide" data-songs='[{"title": "Hum Mar Jayenge", "artist": "Arijit Singh", "duration": "5:06", "img": "hum mar jaynga.jpeg", "url": "https://github.com/harshshallya/songs/raw/main/Hum%20Mar%20Jayenge.mp3"},
+                {"title": "Tera Yaar Hoon MAi", "artist": "Arijit Singh", "duration": "4:24", "img": "tera yaar.jpg", "url": "https://github.com/harshshallya/songs/raw/main/Tera%20Yaar%20Hoon%20Main_320(PagalWorld.com.sb).mp3"},
+  {"title": "Sajde", "artist": "Arijit Singh", "duration": "5:25", "img": "sajde.jpg", "url": "https://github.com/harshshallya/songs/raw/main/Sajde_320(PagalWorld.com.sb).mp3"}
+              ]'>
+                  <img
+                    src="https://github.com/ecemgo/mini-samples-great-tricks/assets/13468728/ab52d9d0-308e-43e0-a577-dce35fedd2a3" />
+                  <div class="slide-overlay">
+                    <h2>Relaxing Tones</h2>
+                    <button>
+                      Listen Now <i class="fa-solid fa-circle-play"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="swiper-slide" data-songs='[{"title": "Hum Mar Jayenge", "artist": "Arijit Singh", "duration": "5:06", "img": "hum mar jaynga.jpeg", "url": "https://github.com/harshshallya/songs/raw/main/Hum%20Mar%20Jayenge.mp3"},{"title": "Apna Bana Le", "artist": "Arijit Singh", "duration": "3:24", "img": "apna bana lee.jpg", "url": "https://github.com/harshshallya/songs/raw/main/Apna-Bana-Le(PagalWorld).mp3"},
+                {"title": "Jhoome Jo Pathaan", "artist": "Arijit Singh", "duration": "3:22", "img": "path.jpg", "url": "https://github.com/harshshallya/songs/raw/main/Jhoome%20Jo%20Pathaan_320(PagalWorld.com.sb).mp3"}]'>
+                  <img
+                    src="https://github.com/ecemgo/mini-samples-great-tricks/assets/13468728/20c8fdd5-9f4a-4917-ae90-0239a52e8334" />
+                  <div class="slide-overlay">
+                    <h2>Smooth Jazz Journey</h2>
+                    <button>
+                      Listen Now <i class="fa-solid fa-circle-play"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="swiper-slide" data-songs='[{"title": "Senorita ZNMD", "artist": "Farhan Akhtar", "duration": "3:51", "img": "znmd.jpeg", "url": "https://github.com/harshshallya/songs/raw/main/bollywood_ZNMD%202011%20-%20Senorita.mp3"},
+                {"title": "Tera Jaisa Yaar Kahan", "artist": "Kishore Kumar", "duration": "3:22", "img": "terajaisa.jpeg", "url": "https://github.com/harshshallya/songs/raw/main/old_Yaarana-Tere%20Jaisa%20Yaar%20Kahan.mp3"}]'>
+                  <img
+                    src="https://github.com/ecemgo/mini-samples-great-tricks/assets/13468728/df461a99-2fb3-4d55-ac16-2e0c6dd783e1" />
+                  <div class="slide-overlay">
+                    <h2>Uplifting Rhythms</h2>
+                    <button>
+                      Listen Now <i class="fa-solid fa-circle-play"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="swiper-pagination"></div>
+              <div class="swiper-button-next"></div>
+  <div class="swiper-button-prev"></div>
+            </div>
+          </div>
+
+          <div class="artists">
+            <h1>Featured Artists</h1>
+            <div class="artist-container containers">
+              <div class="artist">
+                <div class="artist-img-container"><img
+                  src="arijit singh.jpg"
+                  alt="" /></div>
+                <p>Arijit Singh</p>
+              </div>
+
+              <div class="artist">
+                <div class="artist-img-container"><img
+                  src="tulsi.jpeg"
+                  alt="" /></div>
+                <p>Tulsi Kumar</p>
+              </div>
+
+              <div class="artist">
+                <div class="artist-img-container"><img
+                  src="jubin nautiyal.jpeg"
+                  alt="" /></div>
+                <p>Jubin Nautiyal</p>
+              </div>
+
+              <div class="artist">
+                <div class="artist-img-container"><img
+                  src="ar rahaman.jpeg"
+                  alt="" /></div>
+                <p>A.R Rahaman</p>
+              </div>
+
+              <div class="artist">
+                <div class="artist-img-container"><img
+                  src="neha kakkar.jpeg"
+                  alt="" /></div>
+                <p>Neha Kakkar</p>
+              </div>
+
+              <div class="artist">
+                <div class="artist-img-container"><img
+                  src="badshah.jpeg"
+                  alt="" /></div>
+                <p>Badshah</p>
+              </div>
+
+              <div class="artist">
+                <div class="artist-img-container"><img
+                  src="taylor.jpeg"
+                  alt="" /></div>
+                <p>Taylor Swift</p>
+              </div>
+
+              <div class="artist">
+                <div class="artist-img-container"><img
+                  src="kishore.jpeg"
+                  alt="" /></div>
+                <p>Kishore Kumar</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="albums">
+            <h1>Recommended Albums</h1>
+            <div class="album-container containers">
+              <div class="album">
+                <div class="album-frame">
+                  <img
+                    src="bolly.jpeg "
+                    alt="" />
+                </div>
+                <div>
+                  <h2>BollyWood</h2>
+                  <p>Kickstart your sundowner party with these hits</p>
+                </div>
+              </div>
+
+              <div class="album">
+                <div class="album-frame">
+                  <img
+                    src="hang.jpeg"
+                    alt="" />
+                </div>
+                <div>
+                  <h2>Hangover Cure</h2>
+                  <p>Trust us, You need this</p>
+                </div>
+              </div>
+
+              <div class="album">
+                <div class="album-frame">
+                  <img
+                    src="old.jpeg"
+                    alt="" />
+                </div>
+                <div>
+                  <h2>All Out 10's Hindi</h2>
+                  <p>Old Bolloywood Songs</p>
+                </div>
+              </div>
+
+              <div class="album">
+                <div class="album-frame">
+                  <img
+                    src="https://github.com/ecemgo/mini-samples-great-tricks/assets/13468728/4e7bf466-7fa5-4dad-b628-5bca12833b64"
+                    alt="" />
+                </div>
+                <div>
+                  <h2>Endless Summer Vacation</h2>
+                  <p>Miley Cyrus</p>
+                </div>
+              </div>
+
+              <div class="album">
+                <div class="album-frame">
+                  <img
+                    src="https://github.com/ecemgo/mini-samples-great-tricks/assets/13468728/f01f546a-7ab7-4e90-acb9-1c1e817b676d"
+                    alt="" />
+                </div>
+                <div>
+                  <h2>The Dark Side of The Moon</h2>
+                  <p>Pink Floyd</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <section class="right-content">
+            <div class="music-player">
+              <div class="album-cover">
+                <img src="images/album-cover.png" id="rotatingImage" alt="" />
+                <span class="point"></span>
+              </div>
+              <h2 id="player-title">Song Title</h2>
+              <p id="player-artist">Artist</p>
+              <audio id="song">
+                <source src="" type="audio/mpeg" />
+              </audio>
+              <div class="progress-container">
+                <span id="current-time">0:00</span>
+                <input type="range" value="0" id="progress" />
+                <span id="duration">0:00</span>
+              </div>
+              <div class="controls">
+                <button class="backward">
+                  <i class="fa-solid fa-backward"></i>
+                </button>
+                <button class="play-pause-btn">
+                  <i class="fa-solid fa-play" id="controlIcon"></i>
+                </button>
+                <button class="forward">
+                  <i class="fa-solid fa-forward"></i>
+                </button>
+              </div>
+            </div>
+          </section>
+          
+            
+            <div class="right-content">
+                <div class="recommended-songs">
+                  <h1>Recommended Songs</h1>
+                  <div class="recommended-songs" id="song-container">
+                    <div class="song" data-song-index="0" data-song-url="https://github.com/harshshallya/songs/raw/main/ATIF%20ASLAM%20%20ARIJIT%20SINGH%20MASHUP%20205.mp3" data-song-img="atif aslam.jpeg">
+                      <div class="song-img">
+                        <img src="atif aslam.jpeg" alt="" />
+                        <div class="overlay">
+                          <i class="fa-solid fa-play"></i>
+                        </div>
+                      </div>
+                      <div class="song-title">
+                        <h2>ATIF ASLAM MASHUP</h2>
+                        <p>Atif Aslam x Arijit Singh</p>
+                      </div>
+                      <span>4:33</span>
+                    </div>
+              
+                    <div class="song" data-song-index="1" data-song-url="https://github.com/harshshallya/songs/raw/main/End%20of%20Beginning.mp3" data-song-img="eob.jpeg">
+                      <div class="song-img">
+                        <img src="eob.jpeg" alt="" />
+                        <div class="overlay">
+                          <i class="fa-solid fa-play"></i>
+                        </div>
+                      </div>
+                      <div class="song-title">
+                        <h2>End Of Begining</h2>
+                        <p>Djo</p>
+                      </div>
+                      <span>2:39</span>
+                    </div>
+              
+                    <div class="song" data-song-index="2" data-song-url="https://github.com/harshshallya/songs/raw/main/Yeh%20Dil%20Deewana.mp3" data-song-img="yeah dil.jpeg">
+                      <div class="song-img">
+                        <img src="yeah dil.jpeg" alt="" />
+                        <div class="overlay">
+                          <i class="fa-solid fa-play"></i>
+                        </div>
+                      </div>
+                      <div class="song-title">
+                        <h2>Yeah Dil Deewana</h2>
+                        <p>Sonu Nigam</p>
+                      </div>
+                      <span>7:06</span>
+                    </div>
+              
+                    <div class="song" data-song-index="3" data-song-url="https://github.com/harshshallya/songs/raw/main/Kun%20Faaya%20Kun.mp3" data-song-img="kun faya kun.jpeg">
+                      <div class="song-img">
+                        <img src="kun faya kun.jpeg" alt="" />
+                        <div class="overlay">
+                          <i class="fa-solid fa-play"></i>
+                        </div>
+                      </div>
+                      <div class="song-title">
+                        <h2>Kun Faya Kun</h2>
+                        <p>A.R.Rahaman, Javed Ali</p>
+                      </div>
+                      <span>7:50</span>
+                    </div>
+              
+                    <div class="song" data-song-index="4" data-song-url="https://github.com/harshshallya/songs/raw/main/Im%20Scared.mp3" data-song-img="i am scared.jpeg">
+                      <div class="song-img">
+                        <img src="i am scared.jpeg" alt="" />
+                        <div class="overlay">
+                          <i class="fa-solid fa-play"></i>
+                        </div>
+                      </div>
+                      <div class="song-title">
+                        <h2>I'm scared</h2>
+                        <p>Anirudh Ravichander</p>
+                      </div>
+                      <span>2:25</span>
+                    </div>
+              
+                    <div class="song" data-song-index="5" data-song-url="https://github.com/harshshallya/songs/raw/main/Malang%20Sajna.mp3" data-song-img="malang sajna.jpeg">
+                      <div class="song-img">
+                        <img src="malang sajna.jpeg" alt="" />
+                        <div class="overlay">
+                          <i class="fa-solid fa-play"></i>
+                        </div>
+                      </div>
+                      <div class="song-title">
+                        <h2>Malang Sajana</h2>
+                        <p>Sachet Tandon</p>
+                      </div>
+                      <span>2:41</span>
+                    </div>
+              
+                    <div class="song" data-song-index="6" data-song-url="https://github.com/harshshallya/songs/raw/main/Hum%20Mar%20Jayenge.mp3" data-song-img="hum mar jaynga.jpeg">
+                      <div class="song-img">
+                        <img src="hum mar jaynga.jpeg" alt="" />
+                        <div class="overlay">
+                          <i class="fa-solid fa-play"></i>
+                        </div>
+                      </div>
+                      <div class="song-title">
+                        <h2>Hum Mar Jayngene</h2>
+                        <p>Arijit Singh</p>
+                      </div>
+                      <span>5:06</span>
+                    </div>
+              
+                    <div class="song" data-song-index="7" data-song-url="https://github.com/harshshallya/songs/raw/main/Teri%20Aankhon.mp3" data-song-img="teri aankhon.jpeg">
+                      <div class="song-img">
+                        <img src="teri aankhon.jpeg" alt="" />
+                        <div class="overlay">
+                          <i class="fa-solid fa-play"></i>
+                        </div>
+                      </div>
+                      <div class="song-title">
+                        <h2>Teri Aankhon</h2>
+                        <p>Darshan Raval</p>
+                      </div>
+                      <span>4:21</span>
+                    </div>
+              
+                    <div class="song" data-song-index="8" data-song-url="https://github.com/harshshallya/songs/raw/main/chahun%20mai%20ya.mp3" data-song-img="chahun mai.jpeg">
+                      <div class="song-img">
+                        <img src="chahun mai.jpeg" alt="" />
+                        <div class="overlay">
+                          <i class="fa-solid fa-play"></i>
+                        </div>
+                      </div>
+                      <div class="song-title">
+                        <h2>Chahun Main Ya</h2>
+                        <p>Arijit Singh</p>
+                      </div>
+                      <span>5:04</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+          
+      </section>
+    </main>
+    <script src="app.js"></script>
+  </body>
+  </html>
